@@ -4,11 +4,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GST Billing App</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    Testing
+    <div class="container">
+      <h1>GST Billing Form</h1>
+      <form id="billingForm">
+        <fieldset>
+          <legend>Ship From</legend>
+          <label for="shipFromName">Name:</label>
+          <input type="text" id="shipFromName" name="shipFromName" required>
+
+          <label for="shipFromAddress">Address:</label>
+          <input type="text" id="shipFromAddress" name="shipFromAddress" required>
+
+          <label for="shipFromCity">City:</label>
+          <input type="text" id="shipFromCity" name="shipFromCity" required>
+
+          <label for="shipFromState">State:</label>
+          <input type="text" id="shipFromState" name="shipFromState" required>
+
+          <label for="shipFromPincode">Pincode:</label>
+          <input type="text" id="shipFromPincode" name="shipFromPincode" required>
+
+          <label for="shipFromGST">GST Number:</label>
+          <input type="text" id="shipFromGST" name="shipFromGST" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ship To</legend>
+          <label for="shipToName">Name:</label>
+          <input type="text" id="shipToName" name="shipToName" required>
+
+          <label for="shipToAddress">Address:</label>
+          <input type="text" id="shipToAddress" name="shipToAddress" required>
+
+          <label for="shipToCity">City:</label>
+          <input type="text" id="shipToCity" name="shipToCity" required>
+
+          <label for="shipToState">State:</label>
+          <input type="text" id="shipToState" name="shipToState" required>
+
+          <label for="shipToPincode">Pincode:</label>
+          <input type="text" id="shipToPincode" name="shipToPincode" required>
+
+          <label for="shipToGST">GST Number:</label>
+          <input type="text" id="shipToGST" name="shipToGST" required>
+        </fieldset>
+
+        <button type="submit">Generate Bill</button>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 
 </html>
